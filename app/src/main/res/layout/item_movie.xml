@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:padding="@dimen/normal_space">
+
+    <ImageView
+        android:id="@+id/iv_Cover"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/cover_height"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:onClick="onVideoTrailer"
+        tools:src="@drawable/sample" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_space"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size"
+            tools:text="This is the title" />
+
+        <TextView
+            android:id="@+id/tv_Overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_space"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_normal"
+            tools:text=" Maecenas vel varius justo. Sed ac odio nibh. Donec ultricies blandit aliquam. Suspendisse consequat scelerisque felis faucibus consectetur. Nullam feugiat massa vitae lacus vehicula porttitor. Donec id lobortis nunc. Integer sodales tortor sed imperdiet ultrices. Cras tincidunt volutpat elit." />
+    </LinearLayout>
+</LinearLayout>
